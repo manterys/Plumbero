@@ -1,0 +1,12 @@
+.services li {
+  position: relative;
+  padding-left: 2.6rem;
+  margin-bottom: 1rem;
+
+  &::before {
+    content: url(../images/icon/check-icon.svg);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

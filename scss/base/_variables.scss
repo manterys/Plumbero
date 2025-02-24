@@ -1,0 +1,38 @@
+// $dk is Damiankoduje.pl variables
+$dk-primary: #2D5397;
+$dk-secondary: #77ADF9;
+$dk-info: #EEF5FF;
+$dk-danger: #BC1615;
+$dk-light: #ffffff;
+$dk-dark: #1f242c;
+$dk-gray-1: #1f242c;
+$dk-gray-2: #555555;
+$dk-gray-3: #7E7E7E;
+
+body {
+  --bs-body-font-family: 'Montserrat', sans-serif;
+}
+
+// Navbar
+.navbar {
+  --bs-navbar-toggler-focus-width: 0;
+  --bs-navbar-toggler-border-color: none;
+  --bs-navbar-toggler-padding-x: 0.4rem;
+  --bs-navbar-toggler-padding-y: 0;
+  --bs-navbar-brand-margin-end: 0;
+}
+.nav-link {
+  --bs-navbar-nav-link-padding-x: 20px;
+  --bs-navbar-nav-link-padding-y: 0;
+  --bs-nav-link-color: #{$dk-light};
+  --bs-navbar-active-color: #{$dk-light};
+  --bs-nav-link-hover-color: #{$dk-light};
+  --bs-nav-link-font-weight: 400;
+}
+
+// Button
+.btn {
+  --bs-btn-padding-x: 50px;
+  --bs-btn-padding-y: 18px;
+  --bs-border-radius: 10px;
+}

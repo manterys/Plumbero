@@ -1,0 +1,57 @@
+.swiper-slide {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  
+  @media (min-width: 992px) {
+    &:hover .portfolio-description {
+      bottom: 0px;
+    }
+  }
+  
+  .portfolio-description {
+    transition: bottom 0.3s ease;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: $dk-light;
+    background-color: $dk-primary;
+    border-radius: 0 0 10px 10px;
+  
+    &::after {
+      content: url(../images/icon/plus-icon.svg);
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+}
+}
+
+.swiper-button{
+  &-prev,
+  &-next {
+    position: static;
+    margin: 1rem;
+    width: 55px;
+    height: 55px;
+    background-color: $dk-primary;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: $dk-secondary;
+  }
+}
+}
+
+.swiper-button-prev:after{content:""}
+.swiper-button-next:after{content:""}
